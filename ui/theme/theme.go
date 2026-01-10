@@ -1,4 +1,4 @@
-package ui
+package theme
 
 import (
 	"github.com/charmbracelet/lipgloss"
@@ -15,9 +15,12 @@ var (
 	highlightColor = lipgloss.Color("#8B5CF6") // Light purple
 
 	// Backgrounds
-	mainBgColor    = lipgloss.Color("#000000")
-	sidebarBgColor = lipgloss.Color("#121212")
-	footerBgColor  = lipgloss.Color("#080808")
+	MainBgColor    = lipgloss.Color("#000000") // Black
+	SidebarBgColor = lipgloss.Color("#121212") // Dark Gray
+	FooterBgColor  = lipgloss.Color("#000000")
+	HeaderBgColor    = lipgloss.Color("#1a1b26") // Deep Tokyo Night Blue
+	TabBarBgColor    = lipgloss.Color("#1a1b26")
+	SelectionBgColor = lipgloss.Color("#3b4261") // Slate Blue for selection
 
 	// Title style
 	titleStyle = lipgloss.NewStyle().
@@ -39,13 +42,13 @@ var (
 
 	// Layout Styles
 	MainStyle = lipgloss.NewStyle().
-			Background(mainBgColor)
+			Background(MainBgColor)
 
 	SidebarStyle = lipgloss.NewStyle().
-			Background(sidebarBgColor).
+			Background(SidebarBgColor).
 			Padding(1, 2)
 
 	FooterStyle = lipgloss.NewStyle().
-			Background(footerBgColor).
+			Background(FooterBgColor).
 			Padding(0, 1)
 )
